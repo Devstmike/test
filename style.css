@@ -21,6 +21,8 @@ body{
     --section-padding: 100px 50px;
     --bg-secondary : rgb(220, 220, 220);
     --bg-tertiary : rgb(98, 62, 42);
+    --button-color : rgb(255, 49, 49);
+    --button-bg : #00c4cc;
 }
 
 
@@ -60,17 +62,16 @@ body{
 
 .hero-Section .sign-Up{
     display: block;
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
+    background-color: var(--button-bg);
+    color: var(--button-color);
     border: 1px solid transparent;
     padding: 8px 50px ;
     text-decoration: none;
 }
 
 .hero-Section .sign-Up:hover{
-    background-color: transparent;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--button-bg);
 }
 /* Header and Hero section Css ends */
 
