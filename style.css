@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+:root{
+    --primary-color : white;
+    --secondary-color : #623E2A;
+    --tertiary-color : black;
+    --bg-primary : rgb(244, 241, 237);
+    --section-padding: 100px 50px;
+    --bg-secondary : rgb(220, 220, 220);
+    --bg-tertiary : rgb(98, 62, 42);
+}
+
+
+
+/* Header and Hero section Css starts */
+.header-Hero-Wrapper{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) , rgba(0, 0, 0, 0.516)), url('https://media-public.canva.com/MADGxjcTQa4/4/screen_2x.jpg');
+    background-size: cover;
+    background-position: 0 80%;
+    background-repeat: no-repeat;
+}
+
+.hero-Section{
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+.header-Hero-Wrapper header img{
+    width: 250px;
+    height: 250px;
+    margin-top: -50px;
+}
+
+.hero-Section h1{
+    color: var(--primary-color);
+    font-size: 8rem;
+    text-align: center;
+    margin-top: -200px;
+}
+
+.hero-Section button{
+    background-color: var(--primary-color);
+    border: none;
+    padding: 8px 50px ;
+}
+/* Header and Hero section Css ends */
+
+
+
+
+
+
+/* Why us section Css starts */
+.why-Section{
+    color: var(--secondary-color);
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding: var(--section-padding);
+}
+
+.why-Section .left-Wrapper, .why-Section .right-Wrapper{
+    flex: 1;
+}
+
+.why-Section img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.why-Section .right-Wrapper .text{
+    border:  1.5px solid var(--secondary-color);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.why-Section .right-Wrapper .text p{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.why-Section .left-Wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+    line-height: 25px;
+}
+
+.why-Section .left-Wrapper h3{
+    font-size: 2.5rem;
+    line-height: 40px;
+    font-weight: 100;
+    width: 100%;
+
+}
+/* Why us section Css ends */
+
+
+
+
+
+/* steps-Section css starts */
+
+.steps-Section{
+    padding: var(--section-padding) ;
+    color: black;
+    background-color: var(--bg-secondary);
+}
+
+.steps-Section h3{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.steps-Section li span{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.steps-Section li{
+    margin-bottom: 50px;
+}
+
+/* steps-Section css ends */
+
+
+
+/* Footer css starts */
+Footer{
+    padding: var(--section-padding);
+    background-color: var(--bg-tertiary);
+    color: var(--primary-color);
+}
+
+footer .grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+footer .grid-wrapper .item {
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    display:  flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .grid-wrapper .item ul {
+    display:  flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+footer .item ul li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer .contact-icon{
+    width: 16px;
+    height: 16px;
+}
+
+footer .social-icon{
+    width: 100%;
+    height: 100%;
+}
+
+footer .social-item li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+
+footer .grid-wrapper .social-item ul{
+    flex-direction: row;
+}
+
+footer .social-item p{
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-bottom-text{
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer h3{
+    font-size: 2.5rem;
+    line-height: 40px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+/* Footer css ends */
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 992px) {
+
+    .why-Section {
+        flex-direction: column;
+    }
+
+    footer .grid-wrapper{
+        gap: 30px;
+    }
+
+    :root{
+        --section-padding: 100px 10px;
+    }
+    
+    .hero-Section h1{
+        font-size: 4rem;
+        margin-top: 0;
+    }
+
+    .header-Hero-Wrapper header img{
+        width: 100px;
+        height: 100px;
+        margin-top: 0;
+    }
+
+    
+    .hero-Section{
+        min-height: 50vh;
+    }
+
+    .why-Section .left-Wrapper h3{
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    
+    footer .grid-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    
+    .hero-Section h1{
+        font-size: 2rem;
+    }
+
+}
