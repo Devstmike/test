@@ -150,15 +150,24 @@ body{
     text-decoration: underline;
     margin-bottom: 50px;
     font-style: italic;
+    color: #605D3C;
 }
 
 .steps-Section li span{
     text-decoration: underline;
     font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+    color: #3D919D;
+}
+
+.steps-Section ol{
+    list-style-type: none;
 }
 
 .steps-Section li{
     margin-bottom: 50px;
+    text-align: center;
 }
 
 /* steps-Section css ends */
