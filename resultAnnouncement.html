@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .WRAP{
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            width: 300px;
+            height: 30px;
+            /* background-color: red; */
+            overflow: hidden;
+            border: 5px solid ;
+            border-radius: 10px;
+            padding: 0 10px;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .WRAP > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .WRAP > div:nth-child(odd){
+            animation:  rolli 3s infinite;
+        }
+
+        .WRAP > div:nth-child(even){
+            transform: translateY(-90%);
+            animation:  roll2 3s infinite;
+        }
+
+        @keyframes rolli {
+            0%{
+                transform: translateY(0);
+            }
+
+            100%{
+                transform: translateY(-90%);
+            }
+
+        }
+
+        
+        @keyframes roll2 {
+            0%{
+                transform: translateY(-90%);
+            }
+
+            100%{
+                transform: translateY(0);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="WRAP">
+        <div>
+            <P>A</P>
+            <P>B</P>
+            <P>C</P>
+            <P>D</P>
+            <P>E</P>
+            <P>F</P>
+            <P>G</P>
+            <P>H</P>
+            <P>I</P>
+            <P>J</P>
+            <P>K</P>
+            <P>L</P>
+            <P>M</P>
+            <P>N</P>
+            <P>O</P>
+            <P>P</P>
+            <P>Q</P>
+            <P>R</P>
+            <P>S</P>
+            <P>T</P>
+            <P>U</P>
+            <P>V</P>
+            <P>W</P>
+            <P>X</P>
+        </div>    
+        <div>
+            <P>A</P>
+            <P>B</P>
+            <P>C</P>
+            <P>D</P>
+            <P>E</P>
+            <P>F</P>
+            <P>G</P>
+            <P>H</P>
+            <P>I</P>
+            <P>J</P>
+            <P>K</P>
+            <P>L</P>
+            <P>M</P>
+            <P>N</P>
+            <P>O</P>
+            <P>P</P>
+            <P>Q</P>
+            <P>R</P>
+            <P>S</P>
+            <P>T</P>
+            <P>U</P>
+            <P>V</P>
+            <P>W</P>
+            <P>X</P>
+        </div>    
+        <div>
+            <P>A</P>
+            <P>B</P>
+            <P>C</P>
+            <P>D</P>
+            <P>E</P>
+            <P>F</P>
+            <P>G</P>
+            <P>H</P>
+            <P>I</P>
+            <P>J</P>
+            <P>K</P>
+            <P>L</P>
+            <P>M</P>
+            <P>N</P>
+            <P>O</P>
+            <P>P</P>
+            <P>Q</P>
+            <P>R</P>
+            <P>S</P>
+            <P>T</P>
+            <P>U</P>
+            <P>V</P>
+            <P>W</P>
+            <P>X</P>
+        </div>    
+        <div>
+            <P>A</P>
+            <P>B</P>
+            <P>C</P>
+            <P>D</P>
+            <P>E</P>
+            <P>F</P>
+            <P>G</P>
+            <P>H</P>
+            <P>I</P>
+            <P>J</P>
+            <P>K</P>
+            <P>L</P>
+            <P>M</P>
+            <P>N</P>
+            <P>O</P>
+            <P>P</P>
+            <P>Q</P>
+            <P>R</P>
+            <P>S</P>
+            <P>T</P>
+            <P>U</P>
+            <P>V</P>
+            <P>W</P>
+            <P>X</P>
+        </div>    
+        <div>
+            <P>A</P>
+            <P>B</P>
+            <P>C</P>
+            <P>D</P>
+            <P>E</P>
+            <P>F</P>
+            <P>G</P>
+            <P>H</P>
+            <P>I</P>
+            <P>J</P>
+            <P>K</P>
+            <P>L</P>
+            <P>M</P>
+            <P>N</P>
+            <P>O</P>
+            <P>P</P>
+            <P>Q</P>
+            <P>R</P>
+            <P>S</P>
+            <P>T</P>
+            <P>U</P>
+            <P>V</P>
+            <P>W</P>
+            <P>X</P>
+        </div>    
+        <div>
+            <P>A</P>
+            <P>B</P>
+            <P>C</P>
+            <P>D</P>
+            <P>E</P>
+            <P>F</P>
+            <P>G</P>
+            <P>H</P>
+            <P>I</P>
+            <P>J</P>
+            <P>K</P>
+            <P>L</P>
+            <P>M</P>
+            <P>N</P>
+            <P>O</P>
+            <P>P</P>
+            <P>Q</P>
+            <P>R</P>
+            <P>S</P>
+            <P>T</P>
+            <P>U</P>
+            <P>V</P>
+            <P>W</P>
+            <P>X</P>
+        </div>    
+        <div>
+            <P>A</P>
+            <P>B</P>
+            <P>C</P>
+            <P>D</P>
+            <P>E</P>
+            <P>F</P>
+            <P>G</P>
+            <P>H</P>
+            <P>I</P>
+            <P>J</P>
+            <P>K</P>
+            <P>L</P>
+            <P>M</P>
+            <P>N</P>
+            <P>O</P>
+            <P>P</P>
+            <P>Q</P>
+            <P>R</P>
+            <P>S</P>
+            <P>T</P>
+            <P>U</P>
+            <P>V</P>
+            <P>W</P>
+            <P>X</P>
+        </div>    
+        <div>
+            <P>A</P>
+            <P>B</P>
+            <P>C</P>
+            <P>D</P>
+            <P>E</P>
+            <P>F</P>
+            <P>G</P>
+            <P>H</P>
+            <P>I</P>
+            <P>J</P>
+            <P>K</P>
+            <P>L</P>
+            <P>M</P>
+            <P>N</P>
+            <P>O</P>
+            <P>P</P>
+            <P>Q</P>
+            <P>R</P>
+            <P>S</P>
+            <P>T</P>
+            <P>U</P>
+            <P>V</P>
+            <P>W</P>
+            <P>X</P>
+        </div>    
+        <div>
+            <P>A</P>
+            <P>B</P>
+            <P>C</P>
+            <P>D</P>
+            <P>E</P>
+            <P>F</P>
+            <P>G</P>
+            <P>H</P>
+            <P>I</P>
+            <P>J</P>
+            <P>K</P>
+            <P>L</P>
+            <P>M</P>
+            <P>N</P>
+            <P>O</P>
+            <P>P</P>
+            <P>Q</P>
+            <P>R</P>
+            <P>S</P>
+            <P>T</P>
+            <P>U</P>
+            <P>V</P>
+            <P>W</P>
+            <P>X</P>
+        </div>    
+
+    </div>    
+</body>
+</html>
