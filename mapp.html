@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myfrid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px;
+            padding: 10px;
+        }
+
+
+        .myfrid > div  a{
+            text-decoration: none; background-color: blue; display: block; text-align: center;padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+        }
+
+        .myfrid > div img{
+            height: 300px ;
+            object-fit: contain;
+            width: 100%;
+        }
+        @media screen and (max-width:600px) {
+         .myfrid{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="myfrid">
+        <div>
+            <img src="amyy.PNG" alt="">
+            <a href="https://maps.app.goo.gl/1bWcwYJ7r4qsV172A">view review</a>
+        </div>
+        <div>
+            <img src="foxy.PNG" alt="">
+            <a href="https://maps.app.goo.gl/mzAaS25KKyx48mVq5">view review</a>
+        </div>
+        <div>
+            <img src="jeremy.PNG" alt="">
+            <a href="https://maps.app.goo.gl/q8SdvwnMUgfdYzsMA">view review</a>
+        </div>
+        <div>
+            <img src="luis.PNG" alt="">
+            <a href="https://maps.app.goo.gl/cAH7oZN2phwHones5">view review</a>
+        </div>
+        <div>
+            <img src="myesa.PNG" alt="">
+            <a href="https://maps.app.goo.gl/psTwatvp3yxZ45pE6">view review</a>
+        </div>
+    </div>
+</body>
+</html>
