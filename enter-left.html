@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+
+        body{
+            background-color: black;
+            padding: 100px;
+        }
+
+        .wrap{
+            background-color: rgb(255, 255, 255);
+            /* padding: 60px; */
+            width: 420px;
+            height: 100px;
+            border-radius: 100px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            /* position: relative; */
+            overflow:hidden;
+            position: relative;
+            
+        }
+
+        
+
+       .wrap > div:first-child{
+            width: 100px;
+            background-color: rgb(202, 196, 196);
+            border-radius: 50px;
+            height: 100px;
+            margin-right: 10px;
+       }
+
+       
+       .wrap > div:last-child{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 5px;
+            padding: 20px 0;
+       }
+
+       .flex, .flex div{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+       }
+
+       .make-gray{
+            color: rgb(202, 196, 196);
+       }
+
+       .flex div img{
+         width: 20px;
+       }
+
+       .flex div p{
+            color: rgb(21, 89, 154);
+            margin-left: 5px;
+       }
+
+       .outside{
+        position: relative;
+        width: 420px;
+        /* background-color: red; */
+       }
+
+       .cancel{
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: rgb(202, 196, 196);
+            font-size: 1.2rem;
+            margin: -30px;
+            margin-right: -10px;
+            cursor: pointer;
+       }
+
+       section .outside{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            margin-bottom: 50px;
+            transform: translateX(-470px);
+       }
+
+       @keyframes one {
+            0%{
+                transform: translateX(-470px);
+            }
+
+            10%{
+                transform: translateX(0);
+            }
+
+            50%{
+                transform: translateX(0);
+            }
+
+            95%{
+                transform: translateX(0);
+            }
+
+            100%{
+                transform: translateX(-470px);
+            }
+       }
+
+       section .outside:nth-child(1){
+        animation: one 10s ease-in-out 1s  infinite forwards;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+       }
+
+       .hideMe{
+        display: none !important;
+       }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <div class="outside">
+            <div class="cancel">x</div>
+            <div class="wrap">
+                <div>
+                  
+                </div>
+                <div>
+                    <h4>Someone From <span id="name">Winchester, CA</span></h4>
+                    <p class="make-gray">Just submitted a request for  consultation</p>
+                    <div class="flex">
+                        <p class="make-gray" style="margin-right: 5px;"> <span id="time">6 hours ago</span> |</p>
+                        <div>
+                            <img src="icon-tiny.webp" alt="">
+                            <p>by TrustPulse</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+      
+    </section>
+
+    <script>
+
+        let arr = [
+        {
+            name : 'Arizona , AZ',
+            time : '43 minutes ago' 
+        },
+        {
+            name : 'Georgia, GA',
+            time : '3 hours ago',
+        },
+        {
+            name : 'Maryland, Md',
+            time : '5 hours ago',
+        } ,
+        {
+            name : 'Texas, TX',
+            time : '2 minutes ago',
+        } ,
+        {
+            name : 'New York, NY',
+            time : '9 seconds ago',
+        }  
+        ]
+
+
+        let mytime = document.getElementById('time');
+        let myname = document.getElementById('name');
+        let outside = document.querySelector('.outside')
+        
+        let i = 2
+        setInterval(() => {
+            myname.innerHTML = arr[i - 2].name
+            mytime.innerHTML = arr[i - 2].time
+
+            if(i % 2 == 0 ){
+                outside.classList.add('hideMe')
+            } else {
+                outside.classList.remove('hideMe')
+            }
+            i++
+
+
+        }, 11000);
+
+    </script>
+</body>
+</html>
