@@ -128,6 +128,35 @@
        .hideMe{
         display: none !important;
        }
+
+       @media screen and (max-width: 600px) {
+        .outside, .wrap {
+                width: 98%;
+        }
+
+        p{
+            font-size: 0.8rem;
+        }
+
+        .wrap{
+            height: 80px;
+        }
+        
+        .wrap > div:first-child{
+            width: 100px;
+            background-color: rgb(202, 196, 196);
+            border-radius: 50px;
+            height: 100px;
+            margin-left: -20px;
+            height: 80px;
+           }
+
+           .cancel{
+           
+            margin: -30px;
+            margin-right: 10px;
+       }
+       }
     </style>
 </head>
 <body>
