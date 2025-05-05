@@ -322,34 +322,57 @@ model-viewer , .glow{
     }
 
     
-.grid-two, .grid-three {
-    grid-template-columns: repeat(3, 1fr);
+        .grid-two, .grid-three {
+            grid-template-columns: repeat(2, 1fr);
 
-}
+        }
 
 
-.apps p, .presale p, .affiliate-program p, 
-.grid-item > section > h4+p{
-    /* font-size: 0.8rem; */
-    /* 0.6rem */
-    font-size: 16px;
-}
-    .make3d{
-        position: absolute;
-    }
+        .apps p, .presale p, .affiliate-program p, 
+        .grid-item > section > h4+p{
+            /* font-size: 0.8rem; */
+            /* 0.6rem */
+            font-size: 16px;
+        }
+            .make3d{
+                position: absolute;
+                width: 80%;
+        /* background-color: rebeccapurple !important; */
+        margin: auto;
+        left: 10%
+            }
 
-    .top-header{
-        height: auto
-    }
-    
-    .grid-container{
-        height: auto;
-    }
+            .top-header{
+                height: auto
+            }
+            
+            .grid-container{
+                height: auto;
+            }
 
-    model-viewer , .glow{
-        width: 50px;
-        height: 50px;
-}
+            model-viewer , .glow{
+                width: 50px;
+                height: 50px;
+        }
+
+        h1{
+            font-size: 2rem;
+        }
+
+        h3{
+            font-size: 1.5rem;
+        }
+
+        .make3d{
+            /* width: 80%; */
+            /* background-color: rebeccapurple !important; */
+        }
+
+        .grid-container > .grid-item:last-child{
+            /* width: 60%; */
+            
+        }
+
 }
 .content {
     margin: 20px;
@@ -383,6 +406,8 @@ model-viewer , .glow{
     font-size: 1rem;
   }
   
+
+        
     </style>
 </head>
 <body>
@@ -427,7 +452,7 @@ model-viewer , .glow{
                     </section>
                     <section class="inner-section presale" id="presale  ">
                         <h3>Affiliate Program</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus pariatur dolorum esse.</p>
+                        <p>Earn 100% commission instantly direct to your cardano wallet</p>
                         
                     </section>
                 </section>
